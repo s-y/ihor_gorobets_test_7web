@@ -11,8 +11,7 @@ class Note(models.Model):
     name = models.CharField(_('Name'), max_length=80, unique=True)
     text = models.TextField(_('Text'))
     done = models.BooleanField(_('Done'), default=False)
-    image = models.ImageField(
-        _('Image'), upload_to='notes_image', blank=True, null=True)
+    image = models.ImageField(_('Image'), upload_to='notes_image', blank=True, null=True)
 
     class Meta:
         verbose_name = _('Note')

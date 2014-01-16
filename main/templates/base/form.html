@@ -1,0 +1,35 @@
+{% extends "_layouts/base.html" %}
+{% load i18n %}
+{% load bootstrap %}
+{% block css %}
+{{block.super}}
+<style>
+    /* Move down content because we have a fixed navbar that is 50px tall */
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+</style>
+{% endblock css %}
+
+{% block title %}{% trans "Notes" %}{% endblock %}
+{% block page_class %}home-page{% endblock %}
+{% block content %}
+
+{% include "header.html" %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>{% trans "Add note" %}</h2>
+            <form action="" method="post">{% csrf_token %}
+                {#    {% crispy form form.helper %}#}
+                {{ form|bootstrap }}
+                <button class="btn btn-default" type="submit">Create</button>
+        </div>
+
+
+    </div>
+
+    {% endblock %}

@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-11 10:34+0200\n"
+"PO-Revision-Date: 2014-01-11 10:36+0300\n"
+"Last-Translator: Singularity <Singularitty@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: fields.py:16
+msgid "Field with value must have at least 1 upper char"
+msgstr "Поле повинно мати хоча б одну велику букву"
+
+#: models.py:11 models.py:30
+msgid "Name"
+msgstr "Ім`я"
+
+#: models.py:12
+msgid "Text"
+msgstr "Текст"
+
+#: models.py:13
+msgid "Done"
+msgstr "Зроблено"
+
+#: models.py:14
+msgid "Image"
+msgstr "Зображення "
+
+#: models.py:18
+msgid "Note"
+msgstr "Нотатка"
+
+#: models.py:19 models.py:31 templates/base/form.html:15
+#: templates/base/notes.html:14
+msgid "Notes"
+msgstr "Нотатки"
+
+#: models.py:24
+msgid "Text field must be at list 10 chars long"
+msgstr "Текст повинен бути не менше 10 символів"
+
+#: models.py:35
+msgid "Book"
+msgstr "Книга"
+
+#: models.py:36
+msgid "Books"
+msgstr "Книги"
+
+#: templates/header.html:11
+msgid "Notes list"
+msgstr "Список нотаток"
+
+#: templates/header.html:21
+msgid "Sign in"
+msgstr "Ввійти"
+
+#: templates/_layouts/base.html:16
+msgid "Title"
+msgstr "Заголовок сторінки"
+
+#: templates/_layouts/base.html:63
+msgid "Company 2013"
+msgstr "Компанія"
+
+#: templates/base/form.html:25
+msgid "Add note"
+msgstr "Додати нотатку"
+
+#: templates/base/notes.html:24
+msgid "Hello on my notes page"
+msgstr "Привіт!"
+
+#: templates/base/notes.html:36
+msgid "No notes yet."
+msgstr "Ще не має нотаток"

@@ -18,7 +18,6 @@ from .models import *
 # from django.shortcuts import render, get_object_or_404
 
 
-
 class AjaxableResponseMixin(object):
 
     def render_to_json_response(self, context, **response_kwargs):
@@ -45,6 +44,7 @@ class AjaxableResponseMixin(object):
         else:
             return response
 
+
 class ListNoteView(ListView):
     model = Note
     paginate_by = 10
@@ -63,4 +63,3 @@ def widget_view(request):
     template = Template(
         "{% load custom_tag %} documnet.write({% show_note number %});")
     return HttpResponse(template.render(Context({'number': note_pk})).replace('\\', '\"\\'))
-

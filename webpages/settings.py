@@ -108,7 +108,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 LOGGING = {
     'version': 1,
-    }
+}
 # Small workaroud for using Heroku db correct
 if getpass.getuser() == 'ihor':
     from .local_settings import *

@@ -11,7 +11,8 @@ class Note(models.Model):
     name = models.CharField(_('Name'), max_length=80, unique=True)
     text = models.TextField(_('Text'))
     done = models.BooleanField(_('Done'), default=False)
-    image = models.ImageField(_('Image'), upload_to='notes_image', blank=True, null=True)
+    image = models.ImageField(
+        _('Image'), upload_to='notes_image', blank=True, null=True)
 
     class Meta:
         verbose_name = _('Note')
@@ -25,3 +26,14 @@ class Note(models.Model):
     def __unicode__(self):
         return self.name
 
+
+class Book(models.Model):
+    name = models.CharField(_('Name'), max_length=80, unique=True)
+    notes = models.ManyToManyField(Note, verbose_name=_('Notes'), blank=True)
+
+    class Meta:
+        verbose_name = _('Book')
+        verbose_name_plural = _('Books')
+
+    def __unicode__(self):
+        return self.name

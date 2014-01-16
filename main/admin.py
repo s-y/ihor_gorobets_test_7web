@@ -8,4 +8,7 @@ from .forms import *
 from .models import *
 
 
-admin.site.register(Note)
+class NoteAdmin(admin.ModelAdmin):
+    form = AddNoteForm
+
+admin.site.register(Note, NoteAdmin)

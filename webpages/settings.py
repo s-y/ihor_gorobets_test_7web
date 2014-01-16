@@ -42,7 +42,6 @@ INSTALLED_APPS = (
     'main',
     'compressor',
     'bootstrapform',
-    'south',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -60,7 +59,7 @@ STATICFILES_FINDERS = (
     'compressor.finders.CompressorFinder',
 )
 
-ROOT_URLCONF = 'main.urls'
+ROOT_URLCONF = 'webpages.urls'
 
 WSGI_APPLICATION = 'webpages.wsgi.application'
 
@@ -102,7 +101,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'django.contrib.messages.context_processors.messages',
     'django.core.context_processors.request',
-    'main.context_processors.note_processor',
 )
 
 

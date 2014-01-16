@@ -56,3 +56,11 @@ class CreateNoteView(AjaxableResponseMixin, CreateView):
     form_class = AddNoteForm
     template_name = 'base/form.html'
     success_url = '/'
+
+
+def widget_view(request):
+    note_pk = random.randint(1, Note.objects.count())
+    template = Template(
+        "{% load custom_tag %} documnet.write({% show_note number %});")
+    return HttpResponse(template.render(Context({'number': note_pk})).replace('\\', '\"\\'))
+

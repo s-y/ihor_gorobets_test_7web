@@ -43,8 +43,7 @@ class AjaxableResponseMixin(object):
             data['_error'] = False
             return self.render_to_json_response(data)
         else:
-            return HttpResponse("Request is not ajax")
-
+            return response
 
 class ListNoteView(ListView):
     model = Note

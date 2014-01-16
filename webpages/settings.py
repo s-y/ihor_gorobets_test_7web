@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'main',
     'compressor',
     'bootstrapform',
+    'south',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -101,12 +102,13 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'django.contrib.messages.context_processors.messages',
     'django.core.context_processors.request',
+    'main.context_processors.note_processor',
 )
 
 
 LOGGING = {
     'version': 1,
-}
+    }
 # Small workaroud for using Heroku db correct
 if getpass.getuser() == 'ihor':
     from .local_settings import *

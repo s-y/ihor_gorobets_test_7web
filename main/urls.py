@@ -12,7 +12,7 @@ urlpatterns = patterns('',
                        url(r'^note/add$', CreateNoteView.as_view(),
                            name='note_add'),
                        url(r'^$', ListNoteView.as_view(), name='notes'),
-                       url(r'^widget/', widget_view, name='widget'),
+                       #url(r'^widget/', widget_view, name='widget'),
                        # url(r'^blog/', include('blog.urls')),
 
                        )

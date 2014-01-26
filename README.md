@@ -1,4 +1,4 @@
-ihor_gorobets_test_7web
+test_web
 =======================
 ```
 python ./manage.py syncdb
